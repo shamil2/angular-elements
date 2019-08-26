@@ -2,12 +2,12 @@
 
 
 <body>
-    <app-hello-world start="0"  end="250" value="140"></app-hello-world>
+    <test-ng-slider start="0"  end="250" value="130"></test-ng-slider>
 
-    <script src="./angularapp.js"></script>
+        <script src="./angularapp.js"></script>
 </body>
 <script>
-    const component = document.querySelector('app-hello-world');
+    const component = document.querySelector('test-ng-slider');
     component.addEventListener('valueEmitter', (event) => {
         console.log(event.detail);
         document.getElementById("value").innerHTML = event.detail;

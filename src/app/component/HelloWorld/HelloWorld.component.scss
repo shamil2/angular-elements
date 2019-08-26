@@ -1,0 +1,94 @@
+
+// We need to use ::ng-deep to overcome view encapsulation
+::ng-deep {
+    .custom-slider .ng5-slider .ng5-slider-bar {
+      background: gray;
+      height: 12px;
+      cursor: pointer;
+    }
+    .custom-slider .ng5-slider .ng5-slider-selection {
+      background: blue;
+    }
+  
+    .custom-slider .ng5-slider .ng5-slider-pointer {
+      top: auto; /* to remove the default positioning */
+      bottom: -14px;
+      width: 16px;
+      height: 16px;
+      background-color:blue;
+      border: 4px solid #fff;
+      outline : none;
+    }
+  
+    .custom-slider .ng5-slider .ng5-slider-pointer:after {
+      display: none;
+    }
+ 
+    .custom-slider .ng5-slider .ng5-slider-bubble {
+      bottom: 14px;
+    }
+  
+    .custom-slider .ng5-slider .ng5-slider-limit {
+      font-weight: bold;
+      color: blue;
+    }
+  
+    .custom-slider .ng5-slider .ng5-slider-tick {
+      width: 1px;
+      height: 10px;
+      margin-left: 4px;
+      border-radius: 0;
+      background: #ffe4d1;
+      top: -1px;
+    }
+  
+    .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
+      background: blue;
+    }
+
+    .ng5-slider .ng5-slider-bubble {
+      color: yellow !important;
+    }
+
+
+    .ng5-slider .ng5-slider-bubble.ng5-slider-limit {
+        // display: none;
+    }
+
+  }
+
+  .picto-incident {
+        background-color: red;
+        fill: black;
+        border-radius: 16px;
+        width: 32px;
+        height: 30px;
+        border: 2px solid #ddd;
+  }
+
+  .img-overlay-wrap {
+    position: relative;
+    display: inline-block;
+    transition: transform 150ms ease-in-out;
+    top: -58px;
+    z-index: 1;
+  }
+  
+  .img-overlay-wrap img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+  }
+  
+  .img-overlay-wrap {
+    .up {
+      position: absolute;
+      top: -2px;
+      left: -1px;
+    }
+  }
+
+  .array-for-incident {
+    display: flex;
+    justify-content: space-between;
+  }

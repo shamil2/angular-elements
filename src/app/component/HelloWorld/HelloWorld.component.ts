@@ -17,7 +17,9 @@ export class HelloWorldComponent {
 
   options: Options = {
     floor: 0,
-    ceil: 250
+    ceil: 250,
+    showSelectionBar: true,
+    animate: false,
   };
 
   valueChange(value: number): void {

@@ -21,7 +21,7 @@ import { Ng5SliderModule } from 'ng5-slider';
 export class AppModule {
   constructor(injector: Injector) {
     const custom = createCustomElement(HelloWorldComponent, { injector });
-    customElements.define('app-hello-world', custom);
+    customElements.define('test-ng-slider', custom);
   }
   ngDoBootstrap() {}
 }
